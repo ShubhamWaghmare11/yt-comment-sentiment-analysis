@@ -96,7 +96,7 @@ def predict_with_timestamps():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    print("JHERE")
+    # print("JHERE")
     data = request.json
     comments = data.get('comments')
     
@@ -118,7 +118,7 @@ def predict():
         transformed_comments_df = pd.DataFrame(transformed_comments_dense, columns=feature_names)
 
 
-        print((transformed_comments_dense))
+        # print((transformed_comments_dense))
 
 
         # Make predictions
