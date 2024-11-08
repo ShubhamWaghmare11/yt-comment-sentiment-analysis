@@ -4,7 +4,7 @@ import mlflow
 import random
 
 #Set the mlflow tracking uri
-mlflow.set_tracking_uri('http://13.49.44.146:5000/')
+mlflow.set_tracking_uri('http://16.171.181.123:5000/')
 
 #start an mlflow run
 with mlflow.start_run():
