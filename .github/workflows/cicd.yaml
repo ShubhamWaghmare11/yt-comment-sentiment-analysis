@@ -114,7 +114,8 @@ jobs:
           pytest scripts/test_flask_api.py
 
 
-            - name: Login to AWS ECR
+      
+      - name: Login to AWS ECR
         if: success()
         run: |
           aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
